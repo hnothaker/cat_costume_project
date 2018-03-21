@@ -1,9 +1,16 @@
-body {
-  margin: 0;
 
+header{
+  display: inline-block;
+  width: 60%
 }
 
 nav{
+  display: inline-block;
+  width: 40%
+}
+
+body {
+  margin: 0;
 
 }
 
@@ -26,20 +33,21 @@ h3{
   text-align: center;
 }
 
-header h1{
-  display: inline-block;
-  width: 75%;
-  text-align: left;
-  padding: 5px 15px 5px 15px;
-  font-size: 1.5em;
-}
-
 p{
   font: .875em 'PT Serif', serif;
   color: #323232;
   line-height: 1.75em;
   padding: 0 30px 30px 30px;
   text-align: left;
+}
+
+
+header h1{
+  width: 75%;
+  display: inline-block;
+  text-align: left;
+  padding: 5px 15px 5px 15px;
+  font-size: 1.5em;
 }
 
 nav p{
@@ -87,7 +95,6 @@ nav p{
   margin: 0 30px;
 }
 
-
 .kittyimg{
   display: inline;
   text-align: center;
@@ -113,9 +120,9 @@ nav p{
   padding-bottom: 80px;
 }
 
-
 .infobox div{
-  width: 250px;
+  width: 75%;
+  max-width: 250px;
   display: inline-block;
   background-color: white;
   padding: 30px;
@@ -165,27 +172,49 @@ footer h1{
   text-align: right;
 }
 
-/* On devices less than 600px */
-@media (max-width: 600px){
+/* On devices less than 660px */
+@media (max-width: 660px){
+    h1{
+      margin: 10px 0;
+      padding: 0;
+    }
+
     nav p{
       display: none;
     }
+
     nav h1{
       text-align: center;
       width: 100%;
     }
+
     header h1 {
       text-align: center;
       width: 100%;
     }
+
+    footer h1 {
+      padding-top: 5%;
+      padding-bottom: 15%;
+    }
+
     .cat-1{
       display: none;
     }
+
     .cat-2{
       display: none;
     }
+
     .aboutbox {
       background-color: #eeeeee;
+    }
+
+
+    .basicinfo{
+      width: 60%;
+      margin: auto;
+      margin-bottom: 5px;
     }
 
     .batcatimg.mobile {
@@ -237,9 +266,23 @@ footer h1{
 }
 
 /* On devices wider than 660px */
-@media(min-width: 750px) {
+@media(max-width: 743px) {
+
+  .info h1{
+    display: none;
+  }
+
+  .info div{
+    padding-bottom: 0;
+    background-color: #eeeeee;
+  }
+
+  .mapimg {
+
+  }
+
 }
 
 /* On devices wider than 940px */
-@media(min-width: 940px) {
+@media(max-width: 940px) {
 }
