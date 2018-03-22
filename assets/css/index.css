@@ -59,12 +59,12 @@ nav p{
   line-height: 0;
 }
 
-.batcatimg {
+.batcatdesktop {
   width: 100%;
   height: auto;
 }
 
-.batcatimg.mobile {
+.batcatmobile {
    display: none;
 }
 
@@ -138,14 +138,14 @@ nav p{
 }
 
 .hours h3 span{
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .contact h3 span{
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
-.contact h3 span .red {
+span.red {
   color:red;
 }
 
@@ -179,6 +179,10 @@ footer h1{
       padding: 0;
     }
 
+    header{
+      width: 100%;
+
+    }
     nav p{
       display: none;
     }
@@ -186,6 +190,11 @@ footer h1{
     nav h1{
       text-align: center;
       width: 100%;
+    }
+
+    .aboutbox div{
+      width: auto;
+
     }
 
     header h1 {
@@ -210,21 +219,26 @@ footer h1{
       background-color: #eeeeee;
     }
 
-
     .basicinfo{
       width: 60%;
       margin: auto;
       margin-bottom: 5px;
     }
 
-    .batcatimg.mobile {
+    .batcatmobile {
       display: block;
       text-align: center;
       position: relative;
     }
 
-    .batcatimg.mobile img {
-       width: 100%;
+    .batcatmobile .background {
+      width: 100%;
+      height: auto;
+    }
+
+    .batcatmobile img {
+       height: 100%;
+       width: auto;
     }
 
     .float-cat {
@@ -260,7 +274,7 @@ footer h1{
       padding: 0;
     }
 
-    .batcatimg.desktop {
+    .batcatdesktop {
       display: none;
     }
 }
